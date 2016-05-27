@@ -11,7 +11,7 @@ Authorization: Basic bWF4Lm11c3RlckBhbnl3aGVyZS5jb206c3VwZXJzZWNyZXQ=
 
 Request:
 {
-   "device":"",
+   "device": {pushwooshToken} or "", 
    "os_type":"Android",
    "os_version":"4.0",
    "dvc_manuf":"unknown",
@@ -30,6 +30,7 @@ __Notes:__
 * The authorization header is standard Base64-Encoded basic authentication header 
 (See https://www.ietf.org/rfc/rfc2617.txt, Chapter 2). The above example encodes 
 "max.muster@anywhere.com:supersecret)
+* Bosch SI uses Pushwoosh notifications. If you want to get push notifications, set the pushToken for the "device" key.
 
 
 # Getting status
